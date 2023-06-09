@@ -4,7 +4,7 @@ from dash import Dash, dcc, dash_table # pip install dash
 
 
 # get a dataframe with data
-file = open("../../printplaydb.csv", "r", encoding="utf8")
+file = open("printplaydb.csv", "r", encoding="utf8")
 db_as_listoflists = list(csv.reader(file))
 #print(db_as_listoflists[2][:20])
 df = pd.DataFrame(db_as_listoflists, columns = ["id","title","authors","language","type","duration","min_players","max_players","entry_threshold","prep_level","link","hashtags"])
